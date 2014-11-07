@@ -113,6 +113,7 @@
 
     <script type="text/javascript" src="assets/js/bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="assets/js/bower_components/sly/dist/sly.js"></script>
+    <script type="text/javascript" src="assets/js/bower_components/enquire/dist/enquire.js"></script>
     <script type="text/javascript" src="assets/js/bower_components/ResponsiveSlides.js/responsiveslides.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>

@@ -14,19 +14,31 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    $('.js--dropdown').click(function(e) {
-        var   that = $(this)
-            , menu = that.find('.js--head-bot-dropdown');
+    // portable
+    enquire.register("screen and (max-width: 1023px)", {
+        match : function() {
+            $('.js--dropdown').on('click', function(e) {
+                var   that = $(this)
+                    , menu = that.find('.js--head-bot-dropdown');
 
-        if (menu.css('display') === 'none') {
-            that.addClass('open-dropdown');
-            menu.slideDown();
-        } else {
-            that.removeClass('open-dropdown');
-            menu.slideUp();
+                if (menu.css('display') === 'none') {
+                    that.addClass('open-dropdown');
+                    menu.slideDown();
+                } else {
+                    that.removeClass('open-dropdown');
+                    menu.slideUp();
+                }
+
+                e.preventDefault();
+            });
         }
+    });
 
-        e.preventDefault();
+    // desktop
+    enquire.register("screen and (min-width: 1024px)", {
+        match : function() {
+            $('.js--dropdown').off('click');
+        }
     });
 
     $('.js--btn-support').click(function(e) {
