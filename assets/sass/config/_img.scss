@@ -1,0 +1,22 @@
+img {
+    max-width:100%;
+}
+
+.img--center {
+    display:block;
+    margin-right:auto;
+    margin-bottom:$base-spacing;
+    margin-left:auto;
+}
+
+.img--right {
+    float:right;
+    margin-bottom:$base-spacing;
+    margin-left:$base-spacing;
+}
+
+.img--left {
+    float:left;
+    margin-right:$base-spacing;
+    margin-bottom:$base-spacing;
+}

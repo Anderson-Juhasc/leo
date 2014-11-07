@@ -1,0 +1,13 @@
+body {
+    background: url(../img/body-bg.jpg) repeat top center;
+    color: #444;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

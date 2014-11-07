@@ -1,0 +1,15 @@
+{
+  "name": "dragoncss",
+  "dependencies": {},
+  "homepage": "https://github.com/dragoncss/dragoncss",
+  "_release": "9551d371ec",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9551d371ec266b1b1a153dc7e118a5e7c26fc6db"
+  },
+  "_source": "git://github.com/dragoncss/dragoncss.git",
+  "_target": "*",
+  "_originalSource": "dragoncss",
+  "_direct": true
+}

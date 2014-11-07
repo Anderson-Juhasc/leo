@@ -1,0 +1,2258 @@
+/*
+* dragon.scss
+**/
+/*
+* _normalize.scss
+**/
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 12, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 1 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 21, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 43, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 55, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 65, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 76, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 87, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 96, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 107, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 116, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 124, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 133, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 142, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 151, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 160, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 167, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 171, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 182, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 190, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 201, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 209, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 219, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 254, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+/* line 264, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 276, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 301, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 310, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 320, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 333, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 345, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 355, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 369, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+/* line 397, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 423, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*
+* _box-sizing.scss
+**/
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ */
+/* line 11, ../sass/bower_components/dragoncss/generic/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+* _clearfix.scss
+**/
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+* _reset.scss
+**/
+/**
+ * The usual...
+ */
+/* line 13, ../sass/bower_components/dragoncss/generic/_reset.scss */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
+/* line 21, ../sass/bower_components/dragoncss/generic/_reset.scss */
+abbr[title], dfn[title] {
+  cursor: help;
+}
+
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
+/* line 28, ../sass/bower_components/dragoncss/generic/_reset.scss */
+u, ins {
+  text-decoration: none;
+}
+
+/**
+ * Apply faux underline via `border-bottom`.
+ */
+/* line 35, ../sass/bower_components/dragoncss/generic/_reset.scss */
+ins {
+  border-bottom: 1px solid;
+}
+
+/**
+ * So that 'alt' text is visually offset if images don't load.
+ */
+/* line 42, ../sass/bower_components/dragoncss/generic/_reset.scss */
+img {
+  font-style: italic;
+}
+
+/**
+ * Give form elements some cursor interactions...
+ */
+/* line 54, ../sass/bower_components/dragoncss/generic/_reset.scss */
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+/* line 61, ../sass/bower_components/dragoncss/generic/_reset.scss */
+.input:active,
+.input:focus,
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none;
+}
+
+/*
+* _layout.scss
+**/
+/* line 6, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout {
+  margin-left: -24px;
+  list-style: none;
+  margin-bottom: 0;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.layout:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 14, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout__item {
+  float: left;
+  padding-left: 24px;
+  width: 100%;
+}
+
+/* line 22, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--half {
+  margin-left: -12px;
+}
+/* line 25, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--half > .layout__item {
+  padding-left: 12px;
+}
+
+/* line 30, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--quarter {
+  margin-left: -6px;
+}
+/* line 33, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--quarter > .layout__item {
+  padding-left: 6px;
+}
+
+/* line 38, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--full {
+  margin-left: 0;
+}
+/* line 41, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--full > .layout__item {
+  padding-left: 0;
+}
+
+/*
+* _widths.scss
+*
+* by csswizardry
+**/
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/**
+ * If you are building a non-responsive site but would still like to use
+ * csswizardry-grids, set this to 'false':
+ */
+/**
+ * Set the spacing between your grid items.
+ */
+/**
+ * Would you like push and pull classes enabled?
+ */
+/**
+ * Define your breakpoints. The first value is the prefix that shall be used for
+ * your classes (e.g. `.palm--one-half`), the second value is the media query
+ * that the breakpoint fires at.
+ */
+/**
+ * Define which namespaced breakpoints you would like to generate for each of
+ * widths, push and pull. This is handy if you only need pull on, say, desk, or
+ * you only need a new width breakpoint at mobile sizes. It allows you to only
+ * compile as much CSS as you need. All are turned on by default, but you can
+ * add and remove breakpoints at will.
+ *
+ * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
+ * have been set to 'true'.
+ */
+/**
+ * You do not need to edit anything from this line onward; csswizardry-grids is
+ * good to go. Happy griddin'!
+ */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * Create our width classes, prefixed by the specified namespace.
+ */
+/**
+ * Push classes, to move grid items over to the right by certain amounts.
+ */
+/**
+ * Pull classes, to move grid items back to the left by certain amounts.
+ */
+/**
+ * These mixins are for the library to use only, you should not need to modify
+ * them at all.
+ *
+ * Enclose a block of code with a media query as named in `$breakpoints`.
+ */
+/*------------------------------------*\
+    $WIDTHS
+\*------------------------------------*/
+/**
+ * CONTENTS
+ * IMPORTS..............Import Defaults and Mixins
+ * SETUP................
+ */
+/*------------------------------------*\
+    $SETUP
+\*------------------------------------*/
+/**
+ * Our regular, non-responsive width classes.
+ */
+/**
+ * Our responsive classes, if we have enabled them.
+ */
+/* line 339, ../sass/bower_components/dragoncss/objects/_widths.scss */
+[class*="push--"] {
+  position: relative;
+}
+
+/*
+* _main.scss
+**/
+/* line 5, ../sass/bower_components/dragoncss/base/_main.scss */
+html {
+  font: 1em/1.5 Arial, sans-serif;
+  overflow-y: scroll;
+  min-height: 100%;
+}
+
+/*
+* _typography.scss
+**/
+/* line 13, ../sass/bower_components/dragoncss/base/_typography.scss */
+h1, .alpha {
+  font-size: 48px;
+  line-height: 1;
+}
+
+/* line 15, ../sass/bower_components/dragoncss/base/_typography.scss */
+h2, .beta {
+  font-size: 41px;
+  line-height: 1.17073;
+}
+
+/* line 17, ../sass/bower_components/dragoncss/base/_typography.scss */
+h3, .gamma {
+  font-size: 29px;
+  line-height: 1.65517;
+}
+
+/* line 19, ../sass/bower_components/dragoncss/base/_typography.scss */
+h4, .delta {
+  font-size: 25px;
+  line-height: 1.92;
+}
+
+/* line 21, ../sass/bower_components/dragoncss/base/_typography.scss */
+h5, .epsilon {
+  font-size: 18px;
+  line-height: 1.33333;
+}
+
+/* line 23, ../sass/bower_components/dragoncss/base/_typography.scss */
+h6, .zeta {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 31, ../sass/bower_components/dragoncss/base/_typography.scss */
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table,
+fieldset, figure,
+pre {
+  margin-bottom: 24px;
+}
+
+/* line 36, ../sass/bower_components/dragoncss/base/_typography.scss */
+table {
+  width: 100%;
+}
+
+/**
+ * `hr` elements only take up a few pixels, so we need to give them special
+ * treatment regarding vertical rhythm.
+ */
+/* line 45, ../sass/bower_components/dragoncss/base/_typography.scss */
+hr {
+  margin-bottom: 24px;
+}
+
+/**
+ * Where `margin-left` is concerned we want to try and indent certain elements
+ * by a consistent amount. Define that amount once, here.
+ */
+/* line 54, ../sass/bower_components/dragoncss/base/_typography.scss */
+ul, ol, dd {
+  margin-left: 24px;
+}
+
+/* line 1, ../sass/config/_head.scss */
+.head {
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 6, ../sass/config/_head.scss */
+  .head--inner .head-bot {
+    background-color: transparent;
+  }
+}
+
+/* line 13, ../sass/config/_head.scss */
+.head-top {
+  padding: 12px 0;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 13, ../sass/config/_head.scss */
+  .head-top {
+    text-align: right;
+  }
+}
+
+/* line 24, ../sass/config/_head.scss */
+.head-top-nav {
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+}
+/* line 29, ../sass/config/_head.scss */
+.head-top-nav > li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px;
+}
+/* line 34, ../sass/config/_head.scss */
+.head-top-nav > li > a {
+  display: block;
+}
+/* line 37, ../sass/config/_head.scss */
+.head-top-nav > li > a > img {
+  display: block;
+}
+/* line 42, ../sass/config/_head.scss */
+.head-top-nav > li:first-child {
+  padding-left: 0;
+}
+/* line 46, ../sass/config/_head.scss */
+.head-top-nav > li:last-child {
+  padding-right: 0;
+}
+
+/* line 52, ../sass/config/_head.scss */
+.head-mid {
+  font-size: 12px;
+}
+/* line 55, ../sass/config/_head.scss */
+.head-mid > .wrapper {
+  position: relative;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.head-mid > .wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 62, ../sass/config/_head.scss */
+.head-btn {
+  background-color: #000;
+  border-radius: 3px;
+  float: right;
+  margin-top: 12px;
+  padding: 6px;
+}
+/* line 69, ../sass/config/_head.scss */
+.head-btn > img {
+  display: block;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 62, ../sass/config/_head.scss */
+  .head-btn {
+    display: none;
+  }
+}
+
+/* line 78, ../sass/config/_head.scss */
+.head-mid-nav {
+  display: none;
+  list-style: none;
+  margin: 0;
+}
+/* line 83, ../sass/config/_head.scss */
+.head-mid-nav > li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px;
+}
+/* line 88, ../sass/config/_head.scss */
+.head-mid-nav > li > a {
+  color: #444;
+  display: block;
+}
+/* line 93, ../sass/config/_head.scss */
+.head-mid-nav > li:first-child {
+  padding-left: 0;
+}
+/* line 97, ../sass/config/_head.scss */
+.head-mid-nav > li:last-child {
+  padding-right: 0;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 78, ../sass/config/_head.scss */
+  .head-mid-nav {
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 0;
+  }
+}
+
+/* line 110, ../sass/config/_head.scss */
+.head-mid-search {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.head-mid-search:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 110, ../sass/config/_head.scss */
+  .head-mid-search {
+    margin-bottom: 0;
+    position: absolute;
+    left: 230px;
+    bottom: 0;
+    width: 350px;
+  }
+}
+
+/* line 125, ../sass/config/_head.scss */
+.head-mid-search__label {
+  font-weight: 700;
+  float: left;
+  line-height: 35px;
+  width: 25%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 125, ../sass/config/_head.scss */
+  .head-mid-search__label {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 125, ../sass/config/_head.scss */
+  .head-mid-search__label {
+    width: 30%;
+  }
+}
+
+/* line 140, ../sass/config/_head.scss */
+.head-mid-search__input {
+  float: left;
+  width: 75%;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.head-mid-search__input:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 146, ../sass/config/_head.scss */
+.head-mid-search__input > .input {
+  float: left;
+  margin-right: 1%;
+  width: 69%;
+}
+/* line 152, ../sass/config/_head.scss */
+.head-mid-search__input > .btn {
+  float: left;
+  padding-left: 0;
+  padding-right: 0;
+  width: 30%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 140, ../sass/config/_head.scss */
+  .head-mid-search__input {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 140, ../sass/config/_head.scss */
+  .head-mid-search__input {
+    width: 70%;
+  }
+}
+
+/* line 168, ../sass/config/_head.scss */
+.head-mid-nav-alt {
+  font-size: 13px;
+  list-style: none;
+  margin: 0;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.head-mid-nav-alt:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 175, ../sass/config/_head.scss */
+.head-mid-nav-alt > li {
+  display: inline-block;
+  font-weight: 700;
+  vertical-align: middle;
+}
+/* line 180, ../sass/config/_head.scss */
+.head-mid-nav-alt > li > a {
+  display: block;
+}
+/* line 184, ../sass/config/_head.scss */
+.head-mid-nav-alt > li:first-child {
+  padding-left: 0;
+}
+/* line 188, ../sass/config/_head.scss */
+.head-mid-nav-alt > li:last-child {
+  padding-right: 0;
+}
+@media only screen and (max-width: 480px) {
+  /* line 194, ../sass/config/_head.scss */
+  .head-mid-nav-alt > li {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+  /* line 199, ../sass/config/_head.scss */
+  .head-mid-nav-alt > li:first-child {
+    padding-bottom: 3px;
+    width: 100%;
+  }
+  /* line 204, ../sass/config/_head.scss */
+  .head-mid-nav-alt > li:nth-last-child(2) {
+    padding-right: 6px;
+  }
+  /* line 208, ../sass/config/_head.scss */
+  .head-mid-nav-alt > li:last-child {
+    padding-left: 6px;
+  }
+}
+@media only screen and (min-width: 481px) {
+  /* line 168, ../sass/config/_head.scss */
+  .head-mid-nav-alt {
+    float: right;
+  }
+  /* line 217, ../sass/config/_head.scss */
+  .head-mid-nav-alt > li {
+    padding: 0 3px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 168, ../sass/config/_head.scss */
+  .head-mid-nav-alt {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  /* line 228, ../sass/config/_head.scss */
+  .head-mid-nav-alt > li {
+    padding: 0 3px;
+  }
+}
+
+/* line 234, ../sass/config/_head.scss */
+.head-mid-login {
+  background-color: #FFF;
+  border: 1px solid #cecece;
+  display: none;
+  float: left;
+  margin-top: 6px;
+  padding: 18px 18px 12px;
+  width: 100%;
+  z-index: 2222;
+}
+/* line 244, ../sass/config/_head.scss */
+.head-mid-login a {
+  color: #4d4d4d;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 234, ../sass/config/_head.scss */
+  .head-mid-login {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    right: 0;
+    top: 80px;
+    margin-top: 0;
+    position: absolute;
+    width: 346px;
+  }
+}
+
+/* line 259, ../sass/config/_head.scss */
+.head-mid-login__head {
+  padding-bottom: 12px;
+}
+
+/* line 263, ../sass/config/_head.scss */
+.head-mid-login__title {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* line 268, ../sass/config/_head.scss */
+.head-mid-login__form {
+  display: table;
+  width: 100%;
+}
+
+/* line 273, ../sass/config/_head.scss */
+.head-mid-login__cell {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 12px;
+}
+/* line 278, ../sass/config/_head.scss */
+.head-mid-login__cell:last-child {
+  padding-right: 0;
+}
+
+/* line 283, ../sass/config/_head.scss */
+.head-mid-login__cell--user {
+  width: 35%;
+}
+
+/* line 287, ../sass/config/_head.scss */
+.head-mid-login__cell--password {
+  width: 35%;
+}
+
+/* line 291, ../sass/config/_head.scss */
+.head-mid-login__cell--btn {
+  width: 20%;
+}
+
+/* line 295, ../sass/config/_head.scss */
+.head-mid-login__remember {
+  display: block;
+}
+
+/* line 299, ../sass/config/_head.scss */
+.head-mid-login__body {
+  padding-bottom: 12px;
+}
+
+/* line 303, ../sass/config/_head.scss */
+.head-mid-login__user {
+  width: 100%;
+}
+
+/* line 307, ../sass/config/_head.scss */
+.head-mid-login__password {
+  width: 100%;
+}
+
+/* line 311, ../sass/config/_head.scss */
+.head-mid-login__btn {
+  width: 100%;
+}
+
+/* line 316, ../sass/config/_head.scss */
+.head-mid-login__foot {
+  border-top: 1px solid #cecece;
+  padding-top: 12px;
+  text-align: center;
+}
+
+/* line 322, ../sass/config/_head.scss */
+.head-bot {
+  background-color: #4e4e4e;
+  display: none;
+  margin-top: 24px;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 322, ../sass/config/_head.scss */
+  .head-bot {
+    display: block !important;
+  }
+}
+
+/* line 332, ../sass/config/_head.scss */
+.head-bot-nav {
+  background-color: #4e4e4e;
+  line-height: 1;
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.head-bot-nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 341, ../sass/config/_head.scss */
+.head-bot-nav > li {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+/* line 345, ../sass/config/_head.scss */
+.head-bot-nav > li > a {
+  color: #fff;
+  display: block;
+  padding: 12px;
+}
+/* line 350, ../sass/config/_head.scss */
+.head-bot-nav > li > a:hover {
+  background-color: #444444;
+  text-decoration: none;
+}
+/* line 356, ../sass/config/_head.scss */
+.head-bot-nav > li.open-dropdown {
+  background-color: #444444;
+}
+/* line 360, ../sass/config/_head.scss */
+.head-bot-nav > li:first-child {
+  display: none;
+}
+/* line 364, ../sass/config/_head.scss */
+.head-bot-nav > li:last-child {
+  border-bottom: none;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 332, ../sass/config/_head.scss */
+  .head-bot-nav {
+    text-align: center;
+    padding: 0;
+  }
+  /* line 373, ../sass/config/_head.scss */
+  .head-bot-nav > li {
+    border-bottom: none;
+    float: left;
+    width: 10.444%;
+  }
+  /* line 378, ../sass/config/_head.scss */
+  .head-bot-nav > li > a {
+    padding: 18px 0;
+  }
+  /* line 381, ../sass/config/_head.scss */
+  .head-bot-nav > li > a > img {
+    display: inline-block;
+  }
+  /* line 386, ../sass/config/_head.scss */
+  .head-bot-nav > li:first-child {
+    background-color: #3f3f3f;
+    display: block;
+    width: 6%;
+  }
+  /* line 391, ../sass/config/_head.scss */
+  .head-bot-nav > li:first-child > a {
+    padding: 17px 0;
+  }
+  /* line 397, ../sass/config/_head.scss */
+  .head-bot-nav > li:nth-last-child(1), .head-bot-nav > li:nth-last-child(2) {
+    display: none;
+  }
+  /* line 402, ../sass/config/_head.scss */
+  .head-bot-nav > li:hover > a {
+    background-color: #444444;
+  }
+  /* line 406, ../sass/config/_head.scss */
+  .head-bot-nav > li:hover .head-bot-dropdown {
+    display: block;
+  }
+}
+
+/* line 414, ../sass/config/_head.scss */
+.head-bot-dropdown {
+  display: none;
+  list-style: none;
+  margin: 0;
+}
+/* line 420, ../sass/config/_head.scss */
+.head-bot-dropdown > li > a {
+  color: #fff;
+  display: block;
+  padding: 12px;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 414, ../sass/config/_head.scss */
+  .head-bot-dropdown {
+    background-color: #444444;
+    display: none;
+    position: absolute;
+    left: 0;
+    text-align: left;
+    width: 200px;
+    z-index: 1111;
+  }
+  /* line 436, ../sass/config/_head.scss */
+  .head-bot-dropdown > li {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  }
+  /* line 441, ../sass/config/_head.scss */
+  .head-bot-dropdown > li > a:hover {
+    background-color: #3f3f3f;
+    text-decoration: none;
+  }
+}
+
+/* line 1, ../sass/config/_wrapper.scss */
+.wrapper {
+  margin: 0 auto;
+  width: 94%;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/config/_wrapper.scss */
+  .wrapper {
+    width: 960px;
+  }
+}
+
+/* line 1, ../sass/config/_tags.scss */
+body {
+  background: url(../img/body-bg.jpg) repeat top center;
+  color: #444;
+  font-size: 14px;
+}
+
+/* line 7, ../sass/config/_tags.scss */
+a {
+  text-decoration: none;
+}
+/* line 10, ../sass/config/_tags.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 1, ../sass/config/_btn.scss */
+.btn {
+  background-color: #b3b3b3;
+  border: 1px solid transparent;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  outline: none;
+  padding: 7px 8px;
+  text-align: center;
+}
+/* line 11, ../sass/config/_btn.scss */
+.btn:hover {
+  text-decoration: none;
+}
+
+/* line 16, ../sass/config/_btn.scss */
+.btn__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 20, ../sass/config/_btn.scss */
+.btn__icon > img {
+  display: inline-block;
+  vertical-align: sub;
+}
+
+/* line 26, ../sass/config/_btn.scss */
+.btn__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 6px;
+}
+
+/* line 32, ../sass/config/_btn.scss */
+.btn--white {
+  background-color: #fff;
+  border-color: #8a8a8a;
+  color: #6c6c6c;
+}
+
+/* line 38, ../sass/config/_btn.scss */
+.btn--yellow {
+  background-color: #ffba00;
+  border-color: #d79d00;
+  color: #906900;
+}
+
+/* line 44, ../sass/config/_btn.scss */
+.btn--red {
+  background-color: #9b2020;
+}
+
+/* line 1, ../sass/config/_input.scss */
+.input {
+  border: 1px solid #b2b2b2;
+  padding: 9px 8px;
+}
+
+/* line 6, ../sass/config/_input.scss */
+.input--small {
+  padding: 6px;
+}
+
+/* line 1, ../sass/config/_breadcrumb.scss */
+.breadcrumb {
+  font-size: 12px;
+  list-style: none;
+  margin-left: 0;
+}
+/* line 6, ../sass/config/_breadcrumb.scss */
+.breadcrumb > li {
+  color: #9b2020;
+  display: inline-block;
+  font-weight: 700;
+  vertical-align: middle;
+  padding: 0 1px;
+}
+/* line 13, ../sass/config/_breadcrumb.scss */
+.breadcrumb > li > a {
+  color: #4d4d4d;
+  display: block;
+}
+/* line 18, ../sass/config/_breadcrumb.scss */
+.breadcrumb > li:first-child {
+  padding-left: 0;
+}
+/* line 22, ../sass/config/_breadcrumb.scss */
+.breadcrumb > li:last-child {
+  padding-right: 0;
+}
+
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 5, ../sass/config/_main.scss */
+.main__cell {
+  float: left;
+}
+
+/* line 9, ../sass/config/_main.scss */
+.main--news {
+  padding-bottom: 48px;
+  margin-left: -48px;
+}
+/* line 13, ../sass/config/_main.scss */
+.main--news > .main__cell {
+  padding-left: 48px;
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 18, ../sass/config/_main.scss */
+  .main--news > .main__cell:first-child {
+    width: 35%;
+  }
+  /* line 22, ../sass/config/_main.scss */
+  .main--news > .main__cell:last-child {
+    width: 65%;
+  }
+}
+/* line 28, ../sass/config/_main.scss */
+.main--news .news {
+  border-top: 4px solid #000;
+  padding-top: 14px;
+}
+/* line 33, ../sass/config/_main.scss */
+.main--news .articles {
+  border-top: 4px solid #000;
+  padding-top: 14px;
+}
+
+/* line 41, ../sass/config/_main.scss */
+.main--home .news,
+.main--home .articles {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* line 47, ../sass/config/_main.scss */
+.main-article {
+  float: left;
+  width: 100%;
+}
+/* line 51, ../sass/config/_main.scss */
+.main-article img {
+  border: 1px solid #999;
+  padding: 6px;
+}
+/* line 56, ../sass/config/_main.scss */
+.main-article a {
+  color: #9b2020;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 47, ../sass/config/_main.scss */
+  .main-article {
+    padding-right: 48px;
+    width: 70%;
+  }
+}
+
+/* line 67, ../sass/config/_main.scss */
+.main-article__title {
+  color: #9b2020;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+/* line 73, ../sass/config/_main.scss */
+.main-aside {
+  float: left;
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 73, ../sass/config/_main.scss */
+  .main-aside {
+    width: 30%;
+  }
+}
+
+/* line 82, ../sass/config/_main.scss */
+.main-aside-news {
+  background-color: #FFF;
+  border: 1px solid #b5b5b5;
+  font-size: 12px;
+  margin-bottom: 24px;
+  padding: 12px 18px 48px;
+}
+
+/* line 90, ../sass/config/_main.scss */
+.main-aside-news__title {
+  color: #181616;
+  font-size: 24px;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+
+/* line 97, ../sass/config/_main.scss */
+.main-aside-news__list {
+  line-height: 1.4;
+  list-style: none;
+  margin: 0;
+}
+/* line 102, ../sass/config/_main.scss */
+.main-aside-news__list > li {
+  margin-bottom: 12px;
+}
+/* line 105, ../sass/config/_main.scss */
+.main-aside-news__list > li > a {
+  color: #4d4d4d;
+}
+/* line 109, ../sass/config/_main.scss */
+.main-aside-news__list > li:nth-child(odd) {
+  font-weight: 700;
+}
+/* line 113, ../sass/config/_main.scss */
+.main-aside-news__list > li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 1, ../sass/config/_news.scss */
+.news {
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+/* line 6, ../sass/config/_news.scss */
+.news__title {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 14px;
+  padding: 3px 8px;
+}
+
+/* line 15, ../sass/config/_news.scss */
+.news__list {
+  line-height: 1.4;
+  list-style: none;
+  margin-left: 0;
+}
+/* line 20, ../sass/config/_news.scss */
+.news__list > li {
+  margin-bottom: 12px;
+}
+/* line 23, ../sass/config/_news.scss */
+.news__list > li > a {
+  color: #4d4d4d;
+}
+/* line 27, ../sass/config/_news.scss */
+.news__list > li:nth-child(odd) {
+  background: url(../img/icon-news.png) no-repeat left center;
+  font-weight: 700;
+  padding-left: 24px;
+}
+/* line 33, ../sass/config/_news.scss */
+.news__list > li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 39, ../sass/config/_news.scss */
+.news__more {
+  color: #cd2f49;
+  font-weight: 700;
+}
+
+/* line 4, ../sass/config/_articles.scss */
+.articles__title {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 14px;
+  padding: 3px 8px;
+}
+
+/* line 13, ../sass/config/_articles.scss */
+.articles__body {
+  margin-left: -48px;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.articles__body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 19, ../sass/config/_articles.scss */
+.articles-item {
+  font-size: 12px;
+  float: left;
+  padding-left: 48px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 19, ../sass/config/_articles.scss */
+  .articles-item {
+    margin-bottom: 24px;
+  }
+  /* line 27, ../sass/config/_articles.scss */
+  .articles-item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 481px) {
+  /* line 19, ../sass/config/_articles.scss */
+  .articles-item {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 19, ../sass/config/_articles.scss */
+  .articles-item {
+    width: 50%;
+  }
+}
+
+/* line 41, ../sass/config/_articles.scss */
+.articles-item__img {
+  display: block;
+  margin-bottom: 12px;
+}
+/* line 45, ../sass/config/_articles.scss */
+.articles-item__img > img {
+  display: block;
+}
+
+/* line 51, ../sass/config/_articles.scss */
+.articles-item__body > h6 {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+/* line 55, ../sass/config/_articles.scss */
+.articles-item__body > h6 > a {
+  color: #4d4d4d;
+}
+/* line 60, ../sass/config/_articles.scss */
+.articles-item__body > p {
+  margin-bottom: 12px;
+}
+
+/* line 65, ../sass/config/_articles.scss */
+.articles-item__more {
+  border-radius: 25px;
+  padding: 3px 8px;
+}
+
+/* line 1, ../sass/config/_foot.scss */
+.foot {
+  background-color: #FFF;
+  padding-bottom: 48px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 1, ../sass/config/_foot.scss */
+  .foot {
+    padding-bottom: 24px;
+  }
+}
+
+/* line 12, ../sass/config/_foot.scss */
+.foot--home .foot-mid > .wrapper {
+  border-bottom: 2px solid #6a6a6a;
+  padding-bottom: 24px;
+}
+/* line 18, ../sass/config/_foot.scss */
+.foot--home .foot-mid-newsletter {
+  margin: 0 auto;
+}
+
+/* line 23, ../sass/config/_foot.scss */
+.foot-top-home {
+  background-color: #ffba00;
+  color: #0c0c0c;
+  font-size: 13px;
+  padding: 24px 0;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.foot-top-home > .wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width: 480px) {
+  /* line 23, ../sass/config/_foot.scss */
+  .foot-top-home {
+    padding-top: 12px;
+  }
+}
+
+/* line 38, ../sass/config/_foot.scss */
+.foot-top-home-nav {
+  background: url(../img/foot-top-home.png) no-repeat top left;
+  font-size: 11px;
+  font-weight: 700;
+  float: left;
+  list-style: none;
+  line-height: 1.1;
+  margin: 0;
+  padding-top: 9px;
+  padding-left: 48px;
+  text-transform: uppercase;
+  width: 35%;
+}
+/* line 51, ../sass/config/_foot.scss */
+.foot-top-home-nav > li {
+  margin-bottom: 12px;
+}
+/* line 54, ../sass/config/_foot.scss */
+.foot-top-home-nav > li > a {
+  color: #fff;
+}
+@media only screen and (max-width: 480px) {
+  /* line 38, ../sass/config/_foot.scss */
+  .foot-top-home-nav {
+    background-image: none;
+    font-size: 12px;
+    margin-bottom: 24px;
+    padding: 0;
+    width: 100%;
+  }
+  /* line 66, ../sass/config/_foot.scss */
+  .foot-top-home-nav > li {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+    margin-bottom: 0;
+  }
+  /* line 70, ../sass/config/_foot.scss */
+  .foot-top-home-nav > li > a {
+    color: #fff;
+    display: block;
+    padding: 12px;
+  }
+  /* line 75, ../sass/config/_foot.scss */
+  .foot-top-home-nav > li > a > img {
+    display: block;
+  }
+  /* line 80, ../sass/config/_foot.scss */
+  .foot-top-home-nav > li:last-child {
+    border-bottom: none;
+  }
+}
+
+/* line 87, ../sass/config/_foot.scss */
+.foot-top-home-article {
+  float: left;
+  width: 65%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 87, ../sass/config/_foot.scss */
+  .foot-top-home-article {
+    width: 100%;
+  }
+}
+
+/* line 96, ../sass/config/_foot.scss */
+.foot-top-home-article__title {
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+/* line 104, ../sass/config/_foot.scss */
+.foot-top-home-video__title {
+  color: #a67900;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1023px) {
+  /* line 109, ../sass/config/_foot.scss */
+  .foot-top-home-video__movie {
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+  /* line 121, ../sass/config/_foot.scss */
+  .foot-top-home-video__movie > iframe,
+  .foot-top-home-video__movie > object,
+  .foot-top-home-video__movie > embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* line 134, ../sass/config/_foot.scss */
+.foot-top {
+  background-color: #ffba00;
+}
+
+/* line 138, ../sass/config/_foot.scss */
+.foot-top-nav {
+  font-size: 12px;
+  font-weight: 700;
+  list-style: none;
+  line-height: 1;
+  margin: 0;
+  padding: 12px 0;
+  text-transform: uppercase;
+}
+/* line 147, ../sass/config/_foot.scss */
+.foot-top-nav > li {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+/* line 150, ../sass/config/_foot.scss */
+.foot-top-nav > li > a {
+  color: #fff;
+  display: block;
+  padding: 12px;
+}
+/* line 155, ../sass/config/_foot.scss */
+.foot-top-nav > li > a > img {
+  display: block;
+}
+/* line 160, ../sass/config/_foot.scss */
+.foot-top-nav > li:last-child {
+  border-bottom: none;
+}
+@media only screen and (max-width: 1023px) {
+  /* line 167, ../sass/config/_foot.scss */
+  .foot-top-nav > li:first-child {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 138, ../sass/config/_foot.scss */
+  .foot-top-nav {
+    padding: 24px 0;
+  }
+  /* line 176, ../sass/config/_foot.scss */
+  .foot-top-nav > li {
+    border-bottom: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 8px;
+  }
+  /* line 182, ../sass/config/_foot.scss */
+  .foot-top-nav > li > a {
+    padding: 0;
+  }
+  /* line 186, ../sass/config/_foot.scss */
+  .foot-top-nav > li:first-child {
+    padding-left: 0;
+  }
+  /* line 190, ../sass/config/_foot.scss */
+  .foot-top-nav > li:last-child {
+    padding-right: 0;
+  }
+}
+
+/* line 197, ../sass/config/_foot.scss */
+.foot-mid {
+  padding: 24px 0;
+}
+
+/* line 201, ../sass/config/_foot.scss */
+.foot-mid-newsletter {
+  font-size: 13px;
+  width: 450px;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.foot-mid-newsletter:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width: 480px) {
+  /* line 201, ../sass/config/_foot.scss */
+  .foot-mid-newsletter {
+    width: 100%;
+  }
+}
+
+/* line 212, ../sass/config/_foot.scss */
+.foot-mid-newsletter__label {
+  float: left;
+  font-weight: 700;
+  line-height: 35px;
+  width: 45%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 212, ../sass/config/_foot.scss */
+  .foot-mid-newsletter__label {
+    line-height: 1;
+    margin-bottom: 6px;
+    width: 100%;
+  }
+}
+
+/* line 225, ../sass/config/_foot.scss */
+.foot-mid-newsletter__input {
+  float: left;
+  width: 55%;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.foot-mid-newsletter__input:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 231, ../sass/config/_foot.scss */
+.foot-mid-newsletter__input > .input {
+  float: left;
+  margin-right: 1%;
+  width: 69%;
+}
+/* line 237, ../sass/config/_foot.scss */
+.foot-mid-newsletter__input > .btn {
+  float: left;
+  padding-left: 0;
+  padding-right: 0;
+  width: 30%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 225, ../sass/config/_foot.scss */
+  .foot-mid-newsletter__input {
+    width: 100%;
+  }
+}
+
+/* line 250, ../sass/config/_foot.scss */
+.foot-bot .wrapper {
+  position: relative;
+}
+
+/* line 255, ../sass/config/_foot.scss */
+.foot-bot-nav {
+  font-size: 19px;
+  font-weight: 700;
+  list-style: none;
+  margin-left: 0;
+}
+/* line 261, ../sass/config/_foot.scss */
+.foot-bot-nav > li {
+  border-bottom: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 1px;
+}
+/* line 267, ../sass/config/_foot.scss */
+.foot-bot-nav > li > a {
+  color: #393939;
+  padding: 0;
+}
+/* line 272, ../sass/config/_foot.scss */
+.foot-bot-nav > li:first-child {
+  padding-left: 0;
+}
+/* line 276, ../sass/config/_foot.scss */
+.foot-bot-nav > li:last-child {
+  padding-right: 0;
+}
+
+/* line 282, ../sass/config/_foot.scss */
+.foot-bot-copyright {
+  font-size: 10px;
+}
+@media only screen and (min-width: 481px) {
+  /* line 282, ../sass/config/_foot.scss */
+  .foot-bot-copyright {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 282, ../sass/config/_foot.scss */
+  .foot-bot-copyright {
+    margin-bottom: 0;
+  }
+}
+
+/* line 294, ../sass/config/_foot.scss */
+.foot-bot-social {
+  list-style: none;
+  line-height: 1;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 302, ../sass/config/_foot.scss */
+.foot-bot-social > li {
+  border-bottom: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 3px;
+}
+/* line 308, ../sass/config/_foot.scss */
+.foot-bot-social > li > a {
+  display: block;
+}
+/* line 312, ../sass/config/_foot.scss */
+.foot-bot-social > li:first-child {
+  padding-left: 0;
+}
+/* line 316, ../sass/config/_foot.scss */
+.foot-bot-social > li:last-child {
+  padding-right: 0;
+}
+@media only screen and (max-width: 480px) {
+  /* line 294, ../sass/config/_foot.scss */
+  .foot-bot-social {
+    position: static;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 294, ../sass/config/_foot.scss */
+  .foot-bot-social {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+/* line 1, ../sass/config/_img.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 5, ../sass/config/_img.scss */
+.img--center {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-left: auto;
+}
+
+/* line 12, ../sass/config/_img.scss */
+.img--right {
+  float: right;
+  margin-bottom: 24px;
+  margin-left: 24px;
+}
+
+/* line 18, ../sass/config/_img.scss */
+.img--left {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+/* line 1, ../sass/config/_rslides.scss */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+/* line 10, ../sass/config/_rslides.scss */
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* line 19, ../sass/config/_rslides.scss */
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+/* line 25, ../sass/config/_rslides.scss */
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+}
+
+/* line 31, ../sass/config/_rslides.scss */
+.rslides-item {
+  display: block;
+  margin-left: -24px;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.rslides-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 38, ../sass/config/_rslides.scss */
+.rslides-item__cell {
+  float: left;
+  padding-left: 24px;
+}
+/* line 42, ../sass/config/_rslides.scss */
+.rslides-item__cell:first-child {
+  width: 55%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 42, ../sass/config/_rslides.scss */
+  .rslides-item__cell:first-child {
+    width: 100%;
+  }
+}
+/* line 50, ../sass/config/_rslides.scss */
+.rslides-item__cell:last-child {
+  width: 45%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 50, ../sass/config/_rslides.scss */
+  .rslides-item__cell:last-child {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 59, ../sass/config/_rslides.scss */
+  .rslides-item__img {
+    margin-bottom: 12px;
+  }
+}
+
+/* line 65, ../sass/config/_rslides.scss */
+.rslides-item__body {
+  color: #4d4d4d;
+}
+/* line 68, ../sass/config/_rslides.scss */
+.rslides-item__body > p {
+  margin-bottom: 12px;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 65, ../sass/config/_rslides.scss */
+  .rslides-item__body {
+    padding: 36px 60px 0 0;
+  }
+}
+
+/* line 77, ../sass/config/_rslides.scss */
+.rslides-item__title {
+  color: #1f1515;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+/* line 84, ../sass/config/_rslides.scss */
+.rslides-item__btn {
+  border-radius: 25px;
+  font-size: 12px;
+  padding: 3px 8px;
+}
+
+/* line 1, ../sass/config/_sly.scss */
+.sly {
+  background-color: #9d2020;
+  background-image: url(../img/sly-bg.png);
+  background-repeat: no-repeat;
+  background-position: center 40px;
+  margin-bottom: 24px;
+  padding: 12px 0 36px;
+}
+
+/* line 10, ../sass/config/_sly.scss */
+.sly__wrapper {
+  position: relative;
+}
+
+/* line 14, ../sass/config/_sly.scss */
+.sly__nav {
+  font-size: 24px;
+  font-weight: 700;
+  list-style: none;
+  margin-left: 0;
+  text-align: center;
+}
+/* line 21, ../sass/config/_sly.scss */
+.sly__nav > li {
+  display: inline-block;
+  padding: 0 8px;
+}
+/* line 25, ../sass/config/_sly.scss */
+.sly__nav > li > a {
+  color: #571414;
+}
+/* line 28, ../sass/config/_sly.scss */
+.sly__nav > li > a.current {
+  color: #fff;
+}
+/* line 32, ../sass/config/_sly.scss */
+.sly__nav > li > a:hover {
+  color: #fff;
+}
+
+/* line 39, ../sass/config/_sly.scss */
+.sly__arrow {
+  position: absolute;
+  top: 135px;
+}
+/* line 43, ../sass/config/_sly.scss */
+.sly__arrow > img {
+  display: block;
+}
+/* line 47, ../sass/config/_sly.scss */
+.sly__arrow.disabled {
+  cursor: default;
+  opacity: .5;
+}
+/* line 52, ../sass/config/_sly.scss */
+.sly__arrow.prevPage {
+  left: 24px;
+}
+/* line 56, ../sass/config/_sly.scss */
+.sly__arrow.nextPage {
+  right: 24px;
+}
+
+/* line 61, ../sass/config/_sly.scss */
+.sly__frame {
+  display: none;
+  margin: 0 65px;
+}
+/* line 65, ../sass/config/_sly.scss */
+.sly__frame.current {
+  display: block;
+}
+
+/* line 70, ../sass/config/_sly.scss */
+.sly__items {
+  list-style: none;
+  margin: 0;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.sly__items:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 76, ../sass/config/_sly.scss */
+.sly__items > li {
+  float: left;
+  margin: 0 20px;
+  width: 168px;
+}
+
+/* line 83, ../sass/config/_sly.scss */
+.sly__item {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+/* line 90, ../sass/config/_sly.scss */
+.sly__item > img {
+  display: inline-block;
+}
+
+/* line 95, ../sass/config/_sly.scss */
+.sly__item-title {
+  margin-top: 8px;
+}
+
+/* line 1, ../sass/config/_logo.scss */
+.logo {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+/* line 5, ../sass/config/_logo.scss */
+.logo > img {
+  display: block;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/config/_logo.scss */
+  .logo {
+    margin-bottom: -6px;
+  }
+}

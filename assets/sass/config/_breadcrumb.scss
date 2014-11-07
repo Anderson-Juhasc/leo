@@ -1,0 +1,26 @@
+.breadcrumb {
+    font-size: 12px;
+    list-style: none;
+    margin-left: 0;
+
+    > li {
+        color: #9b2020;
+        display: inline-block;
+        font-weight: 700;
+        vertical-align: middle;
+        padding: 0 1px;
+
+        > a {
+            color: #4d4d4d;
+            display: block;
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}

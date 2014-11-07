@@ -1,0 +1,46 @@
+.btn {
+    background-color: #b3b3b3;
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    outline:none;
+    padding: 7px 8px;
+    text-align: center;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn__icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    > img {
+        display: inline-block;
+        vertical-align: sub;
+    }
+}
+
+.btn__text {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 6px;
+}
+
+.btn--white {
+    background-color: #fff;
+    border-color: #8a8a8a;
+    color: #6c6c6c;
+}
+
+.btn--yellow {
+    background-color: #ffba00;
+    border-color: #d79d00;
+    color: #906900;
+}
+
+.btn--red {
+    background-color: #9b2020;
+}
