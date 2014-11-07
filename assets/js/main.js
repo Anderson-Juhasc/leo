@@ -38,6 +38,7 @@ $(document).ready(function() {
     enquire.register("screen and (min-width: 1024px)", {
         match : function() {
             $('.js--dropdown').off('click');
+            $('.js--head-bot-dropdown').attr('style', '');
         }
     });
 
